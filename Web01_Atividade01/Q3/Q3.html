@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <h1>Informações Pessoais</h1>
+    <form autocomplete="on" action="/receber_dados.php" method="post">
+        <fieldset>
+            <legend>Formulário</legend>
+            <p>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" required placeholder="Digite seu Nome">
+            </p>
+            <p>
+                <label for="sexo">Sexo:</label>
+                <input type="radio" name="sexo" id="" value="Masculino">
+                <label for="sexo">Masculino</label>
+                <input type="radio" name="sexo" id="" value="Feminino">
+                <label for="sexo">Feminino</label>
+            </p>
+            <p>
+                <label for="idade">Idade:</label>
+                <input type="number" name="idade" id="" min="0" placeholder="Digite sua Idade"><br>
+            </p>
+            <p>
+                <label for="endereço">Endereço:</label>
+                <input type="text" name="endereço" id="" placeholder="Digite o Endereço"><br>
+            </p>
+            <p>
+                <label for="cidade">Cidade:</label>
+                <input type="text" name="Cidade" id="" placeholder="Digite a Cidade"><br>
+            </p>
+            <p>
+                <label for="estado">Estado:</label>
+                <select id="UF" name="UF">
+                    <option value="">UF</option>
+                    <option value="AC">AC</option>
+                    <option value="AL">AL</option>
+                    <option value="AP">AP</option>
+                    <option value="AM">AM</option>
+                    <option value="BA">BA</option>
+                    <option value="CE">CE</option>
+                    <option value="DF">DF</option>
+                    <option value="ES">ES</option>
+                    <option value="GO">GO</option>
+                    <option value="MA">MA</option>
+                    <option value="MS">MS</option>
+                    <option value="MT">MT</option>
+                    <option value="MG">MG</option>
+                    <option value="PA">PA</option>
+                    <option value="PB">PB</option>
+                    <option value="PR">PR</option>
+                    <option value="PE">PE</option>
+                    <option value="PI">PI</option>
+                    <option value="RJ">RJ</option>
+                    <option value="RN">RN</option>
+                    <option value="RS">RS</option>
+                    <option value="RO">RO</option>
+                    <option value="RR">RR</option>
+                    <option value="SC">SC</option>
+                    <option value="SP">SP</option>
+                    <option value="SE">SE</option>
+                    <option value="TO">TO</option>
+                </select>
+            </p>
+            <p>
+                <label for="cep">CEP:</label>
+                <input type="text" placeholder="XXXXX-XXX">
+            </p>
+            <p>
+                <label for="residencial">Tel/Res:</label>
+                <input type="tel" name="residencial" id="" placeholder="(99) 99999-9999">
+            </p>
+            <p>
+                <label for="celular">Tel/Cel:</label>
+                <input type="tel" name="celular" id="" placeholder="(99) 99999-9999">
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="" placeholder="Digite o endereço de email">
+            </p>
+        </fieldset>
+        <button formaction="http://localhost:3003/receberDados"> Incluir </button>
+    </form>
+</body>
+
+</html>
