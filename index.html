@@ -19,17 +19,43 @@
         .cabecalho {
             display: flex;
             background-color: rgb(17, 102, 230);
-            align-items: center;
             font-size: 30px;
-            border-radius: 0px 0px 15px 15px;
             color: white;
+            flex-direction: row;
+            justify-content: space-between;
         }
 
+        .cabecalho-conteudo {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            align-self: flex-end;
+            width: 150px;
+            margin: 10px;
+        }
+
+        .cabecalho-conteudo a {
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            color: white;
+            text-decoration: none;
+            align-items: center;
+            white-space: nowrap;
+            font-size: 17px;
+        }
+
+        .cabecalho-conteudo a:hover {
+            color: rgb(92, 244, 115);
+        }
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
         .conteudo {
             display: flex;
             flex-direction: column;
             margin: 15px;
             border-radius: 25px;
+            background-color: rgb(255, 255, 29);
+            margin-top: 100px;
         }
 
         .titulo-conteudo {
@@ -37,11 +63,12 @@
             display: flex;
             flex-direction: row;
             align-items: center;
-            background-color: rgb(255, 241, 112);
             color: black;
             font-size: 20px;
             border-bottom: solid 5px black;
             padding-left: 5%;
+            margin-left: 15px;
+            margin-right: 15px;
         }
 
         .conteudo-interior {
@@ -50,24 +77,26 @@
             flex-wrap: wrap;
             background-color: aquamarine;
             justify-content: space-around;
+            margin: 15px;
+            margin-top: 0;
         }
 
-        .conteudo-interior nav{
+        .conteudo-interior nav {
             width: 250px;
             display: flex;
             flex-direction: column;
             border: outset 5px rgb(255, 241, 112);
             text-align: center;
+            margin-bottom: 10px;
         }
-        .conteudo-interior a{
+
+        .conteudo-interior a {
             display: block;
             padding: 10px 0px;
             text-decoration: none;
             color: #222;
             font-size: 1.2em;
         }
-
-
 
         .conteudo-interior a:hover {
             background-color: aqua;
@@ -76,9 +105,15 @@
 </head>
 
 <body>
-    <div class="cabecalho">
-        <h1>Meu GitHub Pages</h1>
-    </div>
+    <section class="cabecalho">
+        <div class="cabecalho-titulo">
+            <h1>Meu GitHub Pages</h1>
+        </div>
+        <div class="cabecalho-conteudo">
+            <a href="https://github.com/francisco123neto?tab=repositories"><img
+                    src="./assets/img/princesa-mononoke-perfil.jpg" width="150px">Meus outros repositórios</a>
+        </div>
+    </section>
     <section class="conteudo">
         <div class="titulo-conteudo">
             <h2>Web 01 - Atividades</h2>
@@ -101,36 +136,50 @@
             </nav>
             <nav>
                 <h3>Atividade 02</h3>
-                <a href="https://francisco123neto.github.io/francisconeto.github.io/Web01_Atividades/Web01_Atividade02/atividadeSeletores.html">Questão Única</a>
+                <a
+                    href="https://francisco123neto.github.io/francisconeto.github.io/Web01_Atividades/Web01_Atividade02/atividadeSeletores.html">Questão
+                    Única</a>
             </nav>
             <nav>
                 <h3>Atividade 03</h3>
-                <a href="https://francisco123neto.github.io/francisconeto.github.io/Web01_Atividades/Web01_Atividade03/Q3.html">vazio</a>
+                <a
+                    href="https://francisco123neto.github.io/francisconeto.github.io/Web01_Atividades/Web01_Atividade03/Q3.html">vazio</a>
             </nav>
             <nav>
                 <h3>Atividade 04</h3>
-                <a href="https://francisco123neto.github.io/francisconeto.github.io/Web01_Atividades/Web01_Atividade04/Loja/exercicio.html">Loja</a>
-                <a href="https://francisco123neto.github.io/francisconeto.github.io/Web01_Atividades/Web01_Atividade04/Pizzaria/exercicio.html">Pizzaria</a>
+                <a
+                    href="https://francisco123neto.github.io/francisconeto.github.io/Web01_Atividades/Web01_Atividade04/Loja/exercicio.html">Loja</a>
+                <a
+                    href="https://francisco123neto.github.io/francisconeto.github.io/Web01_Atividades/Web01_Atividade04/Pizzaria/exercicio.html">Pizzaria</a>
             </nav>
             <nav>
                 <h3>Atividade 05</h3>
-                <a href="https://francisco123neto.github.io/francisconeto.github.io/Web01_Atividades/Web01_Atividade05/Q5.html">vazio</a>
+                <a
+                    href="https://francisco123neto.github.io/francisconeto.github.io/Web01_Atividades/Web01_Atividade05/Q5.html">vazio</a>
             </nav>
             <nav>
                 <h3>Atividade 06</h3>
-                <a href="https://francisco123neto.github.io/francisconeto.github.io/Web01_Atividades/Web01_Atividade06/Obra-Artistica.html">Obra Artística</a>
+                <a
+                    href="https://francisco123neto.github.io/francisconeto.github.io/Web01_Atividades/Web01_Atividade06/Obra-Artistica.html">Obra
+                    Artística</a>
             </nav>
             <nav>
                 <h3>Atividade 07</h3>
-                <a href="https://francisco123neto.github.io/francisconeto.github.io/Web01_Atividades/Web01_Atividade07/index.html">Questão Única</a>
+                <a
+                    href="https://francisco123neto.github.io/francisconeto.github.io/Web01_Atividades/Web01_Atividade07/index.html">Questão
+                    Única</a>
             </nav>
             <nav>
                 <h3>Atividade 08</h3>
-                <a href="https://francisco123neto.github.io/francisconeto.github.io/Web01_Atividades/Web01_Atividade08/cssGrid.html">Css Grid</a>
+                <a
+                    href="https://francisco123neto.github.io/francisconeto.github.io/Web01_Atividades/Web01_Atividade08/cssGrid.html">Css
+                    Grid</a>
             </nav>
             <nav>
                 <h3>Atividade 09</h3>
-                <a href="https://francisco123neto.github.io/francisconeto.github.io/Web01_Atividades/Web01_Atividade09/game-store/index.html">Game Store</a>
+                <a
+                    href="https://francisco123neto.github.io/francisconeto.github.io/Web01_Atividades/Web01_Atividade09/game-store/index.html">Game
+                    Store</a>
             </nav>
 
         </div>
