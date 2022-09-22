@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 06</title>
+</head>
+<body>
+    <script>
+        const eleitores = Number(prompt("Números de eleitores:"))
+        const nulos = Number(prompt("Número de votos nulos:"))
+        const brancos = Number(prompt("Número de votos brancos:"))
+        const perNulos = (nulos*100)/eleitores
+        const perBrancos= (brancos*100)/eleitores
+        const perValidos = ((eleitores-(brancos+nulos))*100)/eleitores
+        alert(`Votos válidos:${perValidos}%\n Votos nulos:${perNulos}$\n Votos brancos:${perBrancos}%`)
+
+    </script>
+</body>
+</html>
