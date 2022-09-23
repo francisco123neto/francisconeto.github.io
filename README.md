@@ -14,3 +14,4 @@ azul, cinza claro e preto claro
 usar boodstrap
 
 https://celke.com.br/artigo/tabela-de-cores-html-nome-hexadecimal-rgb
+https://hype4.academy/tools/glassmorphism-generator
