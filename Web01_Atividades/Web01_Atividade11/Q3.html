@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 03</title>
+</head>
+
+<body>
+    <script>
+        const sexo = prompt("Digite 'f' para feminino e 'm' para masculino")
+        const altura = Number(prompt("Sua altura:"))
+        const pesoIdeal = function (sex, alt) {
+            if (sex = 'f') {
+                peso = (62 * alt) - 44
+                alert(`Peso Ideal:${peso}`)
+            }
+            else if (sex = 'm') {
+                peso = (72 * alt) - 58
+                alert(`Peso Ideal:${peso}`)
+            }
+        }
+        pesoIdeal(sexo, altura)  
+    </script>
+</body>
+
+</html>

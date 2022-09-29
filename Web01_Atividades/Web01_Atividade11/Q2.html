@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 02</title>
+</head>
+<body>
+    <script>
+        const tipo = Number(prompt("Digite 'p' para poupança e 'f' para fundo de renda fixa"))
+        const valor = Number(prompt("Valor do Investimento R$:"))
+        const investimento= function (tip,val) {
+            if (tip='p') {
+                val = val+(val*0.05)
+                alert(`Valor:${val}`)
+            }
+            else if (tip='f') {
+                val= val+(val*0.10)
+                alert(`Valor:${val}`)
+            }
+        }
+        investimento(tipo,valor)
+    </script>
+</body>
+</html>

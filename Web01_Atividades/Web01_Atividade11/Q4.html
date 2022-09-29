@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 04</title>
+</head>
+<body>
+    <script>
+        const nome = prompt("Informe seu nome:")
+        const preco = Number(prompt("Valor da compra R$:"))
+        const classifica = function (valor) {
+            if (valor <200) {
+                desconto = (valor * 0.10)
+                valor = valor - desconto
+                alert(`Nome do cliente:${nome}\nValor da Compra R$: ${preco}\nDesconto:10% ${desconto}\nValor Final:${valor}`)
+            }
+            else if (valor>= 200 && valor <= 500) {
+                desconto = (valor * 0.15)
+                valor = valor - desconto
+                alert(`Nome do cliente:${nome}\nValor da Compra R$: ${preco}\nDesconto:15%, R$:${desconto}\nValor Final:${valor}`)
+            }
+            else if (valor > 500) {
+                desconto = (valor * 0.20)
+                valor = valor - desconto
+                alert(`Nome do cliente:${nome}\nValor da Compra R$: ${preco}\nDesconto:20% ${desconto}\nValor Final:${valor}`)
+            }
+        }
+        classifica(preco)
+    </script>
+</body>
+</html>
