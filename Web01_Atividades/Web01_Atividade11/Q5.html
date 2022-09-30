@@ -17,9 +17,11 @@
                 alert(`Número inválido`)
             }
             else if (valor > 100 || valor < 1000) {
+                while (valor > 0) {
                 resultado = 10 * resultado + valor % 10
                 valor = Math.floor(valor / 10)
-                alert(`valor inveritido:${valor}`)
+                }
+                alert(`valor inveritido:${resultado}`)
             }
 
         }
