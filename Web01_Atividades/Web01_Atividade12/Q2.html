@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 02</title>
+</head>
+
+<body>
+    <script>
+        cont = 1
+        let i = "s"
+        num = 0
+        do {
+            const numero = Number(prompt("Produto " + cont + ":"))
+            cont++
+            num = num + numero
+            i = prompt("Deseja continuar? digite s para sim e n para não:")
+        } while (i == "s");
+
+        const valor = Number(prompt("Valor entregue pelo cliente: "))
+        troco = valor - num
+        alert(`Valor total R$: ${num}\n Valor do pagamento R$: ${valor}\n Troco R$: ${troco}`)
+    </script>
+</body>
+
+</html>

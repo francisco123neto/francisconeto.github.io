@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 01</title>
+</head>
+
+<body>
+    <script>
+        cont = 0
+        numValid = 0
+        while (cont < 10) {
+            const numero = Number(prompt("Número " + cont + ":"))
+            cont++
+            if (numero >= 10 && numero <= 20) {
+                numValid++
+            }
+        }
+
+        alert(`Quantidade de números que atendem aos requisitos: ${numValid}`)
+
+    </script>
+</body>
+
+</html>
