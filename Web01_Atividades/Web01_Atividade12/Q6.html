@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 06</title>
+</head>
+
+<body>
+    <script>
+        const valor = Number(prompt("Digite um número: "))
+        let soma = 0
+        for (let divisor = 1; divisor < valor; divisor++) {
+            if (valor % divisor == 0) {
+                soma = soma + divisor
+            }
+        }
+        if (valor == soma) {
+            alert(`O número ${valor} é perfeito`)
+        } else { alert(`O número ${valor} não é perfeito`) }
+    </script>
+</body>
+
+</html>

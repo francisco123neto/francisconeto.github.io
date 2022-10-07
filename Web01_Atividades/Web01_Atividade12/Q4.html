@@ -10,32 +10,29 @@
 
 <body>
     <script>
-        function anoDeCopa() {
-            var ano = document.getElementById('ano').value
-            var resposta
-            if (ano < 1930) {
-                resposta = 'Não havia Copa antes de 1930'
-                aux = 2
-            } else {
-                var inicio = 1929
-                var aux = 0
-                while (inicio < ano) {
-                    if (inicio == ano) {
-                        aux = 1
-                    }
-                    inicio + 4
+        var ano = Number(prompt("Digite o ano: "))
+        var resposta = ""
+        if (ano < 1930) {
+            resposta = 'Não havia Copa antes de 1930'
+            alert(`${resposta}`)
+            aux = 2
+        } else {
+            var inicio = 1930
+            var aux = 0
+            while (inicio < ano) {
+                inicio = inicio + 4
+                if (inicio == ano) {
+                    aux = 1
                 }
             }
-            if ((aux === 1 && ano != 1942 && ano != 1946) || ano === 1930) {
-                resposta = ano + ' é ano de copa'
-            } else if (aux != 2) {
-                resposta = ano + ' não é ano de copa'
-            }
-            document.getElementById('resposta').innerHTML = resposta
         }
-
-        var verificar = document.getElementById('verificar')
-        verificar.addEventListener('click', anoDeCopa)
+        if ((aux == 1 && ano != 1942 && ano != 1946) || ano == 1930) {
+            resposta = ano + ' é ano de copa'
+            alert(`${resposta}`)
+        } else if (aux != 2) {
+            resposta = ano + ' não é ano de copa'
+            alert(`${resposta}`)
+        }
     </script>
 </body>
 
