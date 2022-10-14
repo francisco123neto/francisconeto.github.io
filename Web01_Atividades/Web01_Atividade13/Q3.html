@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 03</title>
+</head>
+
+<body>
+    <script>
+        var semana = new Array('Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado')
+        var temp = new Array()
+
+        for (let index = 0; index < semana.length; index++) {
+            temp[index] = Number(prompt("Informe a média de temperatura do dia " + semana[index] + ":"))
+        }
+        alert(temp)
+        var tempo = temp.map(Number)
+        var menor = Math.min(...tempo);
+        var maior = Math.max(...tempo);
+        alert(`Menor média: ${menor}\nMaior média: ${maior}`)
+    </script>
+</body>
+
+</html>

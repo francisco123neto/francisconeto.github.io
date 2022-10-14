@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 01</title>
+</head>
+
+<body>
+    <script>
+
+        let alunos = new Array('Paulo', 'João', 'Pedro', 'Isaque', 'Gilgamesh')
+        var notas = new Array(7, 9, 6, 8, 5)
+        var media = 0
+        for (let index = 0; index < notas.length; index++) {
+            media = media + notas[index]
+        }
+
+        media = media / notas.length
+        alert(`Alunos: ${alunos} \nNotas: ${notas}\nMédia: ${media}`)
+
+    </script>
+</body>
+
+</html>
